@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Etiquetas HTML</h1>
+
+<table>
+    <tr>
+        <th>Nombre de la Etiqueta</th>
+        <th>Descripción</th>
+        <th>Ejemplo de cómo usar</th>
+    </tr>
+    <tr>
+        <td>&lt;a&gt;</td>
+        <td>Define un hipervínculo</td>
+        <td>&lt;a href="https://www.ejemplo.com"&gt;Enlace de ejemplo&lt;/a&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;div&gt;</td>
+        <td>Define una división o sección en un documento</td>
+        <td>&lt;div style="background-color: lightblue;"&gt;Contenido de ejemplo&lt;/div&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;p&gt;</td>
+        <td>Define un párrafo de texto</td>
+        <td>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;img&gt;</td>
+        <td>Inserta una imagen en la página</td>
+        <td>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;ul&gt;</td>
+        <td>Define una lista sin ordenar</td>
+        <td>
+            &lt;ul&gt;<br>
+            &emsp;&lt;li&gt;Elemento 1&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;Elemento 2&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;Elemento 3&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;ol&gt;</td>
+        <td>Define una lista ordenada</td>
+        <td>
+            &lt;ol&gt;<br>
+            &emsp;&lt;li&gt;Elemento 1&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;Elemento 2&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;Elemento 3&lt;/li&gt;<br>
+            &lt;/ol&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;table&gt;</td>
+        <td>Define una tabla</td>
+        <td>
+            &lt;table border="1"&gt;<br>
+            &emsp;&lt;tr&gt;<br>
+            &emsp;&emsp;&lt;td&gt;Celda 1&lt;/td&gt;<br>
+            &emsp;&emsp;&lt;td&gt;Celda 2&lt;/td&gt;<br>
+            &emsp;&lt;/tr&gt;<br>
+            &emsp;&lt;tr&gt;<br>
+            &emsp;&emsp;&lt;td&gt;Celda 3&lt;/td&gt;<br>
+            &emsp;&emsp;&lt;td&gt;Celda 4&lt;/td&gt;<br>
+            &emsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;form&gt;</td>
+        <td>Define un formulario para la entrada de datos del usuario</td>
+        <td>
+            &lt;form action="/procesar" method="post"&gt;<br>
+            &emsp;Nombre: &lt;input type="text" name="nombre"&gt;&lt;br&gt;<br>
+            &emsp;Email: &lt;input type="email" name="email"&gt;&lt;br&gt;<br>
+            &emsp;&lt;input type="submit" value="Enviar"&gt;<br>
+            &lt;/form&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;input&gt;</td>
+        <td>Define un control de entrada, como un campo de texto o un botón</td>
+        <td>
+            &lt;input type="text" placeholder="Nombre"&gt;&lt;br&gt;<br>
+            &lt;input type="submit" value="Enviar"&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;textarea&gt;</td>
+        <td>Define un área de texto de varios renglones</td>
+        <td>
+            &lt;textarea rows="4" cols="50"&gt;<br>
+            Escribe aquí...<br>
+            &lt;/textarea&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;select&gt;</td>
+        <td>Define una lista desplegable</td>
+        <td>
+            &lt;select&gt;<br>
+            &emsp;&lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;<br>
+            &emsp;&lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;<br>
+            &emsp;&lt;option value="opcion3"&gt;Opción 3&lt;/option&gt;<br>
+            &lt;/select&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;button&gt;</td>
+        <td>Define un botón clickeable</td>
+        <td>&lt;button onclick="alert('Hola Mundo!')"&gt;Haz clic&lt;/button&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;span&gt;</td>
+        <td>Define una sección en línea en un documento</td>
+        <td>&lt;p&gt;Este es un texto de ejemplo con un &lt;span style="color: red;"&gt;texto resaltado&lt;/span&gt;.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;h1&gt;</td>
+        <td>Define un encabezado de nivel 1</td>
+        <td>&lt;h1&gt;Título principal&lt;/h1&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;h2&gt;</td>
+        <td>Define un encabezado de nivel 2</td>
+        <td>&lt;h2&gt;Subtítulo&lt;/h2&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;h3&gt;</td>
+        <td>Define un encabezado de nivel 3</td>
+        <td>&lt;h3&gt;Subtítulo pequeño&lt;/h3&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;hr&gt;</td>
+        <td>Define un cambio temático entre párrafos</td>
+        <td>&lt;hr&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;br&gt;</td>
+        <td>Define un salto de línea</td>
+        <td>Texto antes&lt;br&gt;Texto después</td>
+    </tr>
+    <tr>
+        <td>&lt;em&gt;</td>
+        <td>Define texto enfatizado</td>
+        <td>&lt;em&gt;Texto enfatizado&lt;/em&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;strong&gt;</td>
+        <td>Define texto importante</td>
+        <td>&lt;strong&gt;Texto importante&lt;/strong&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;mark&gt;</td>
+        <td>Define texto resaltado</td>
+        <td>&lt;p&gt;Texto normal con un &lt;mark&gt;texto resaltado&lt;/mark&gt;.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;blockquote&gt;</td>
+        <td>Define una sección de cita larga</td>
+        <td>
+            &lt;blockquote&gt;<br>
+            &emsp;Texto citado aquí...<br>
+            &lt;/blockquote&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;code&gt;</td>
+        <td>Define una sección de código</td>
+        <td>&lt;code&gt;int x = 5;&lt;/code&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;pre&gt;</td>
+        <td>Define texto preformateado</td>
+        <td>
+            &lt;pre&gt;<br>
+            &emsp;Línea 1<br>
+            &emsp;Línea 2<br>
+            &lt;/pre&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;abbr&gt;</td>
+        <td>Define una abreviatura o acrónimo</td>
+        <td>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;address&gt;</td>
+        <td>Define información de contacto del autor/proprietario del documento</td>
+        <td>&lt;address&gt;Nombre<br>123 Calle, Ciudad, País&lt;/address&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;b&gt;</td>
+        <td>Define texto en negrita</td>
+        <td>&lt;b&gt;Texto en negrita&lt;/b&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;i&gt;</td>
+        <td>Define texto en cursiva</td>
+        <td>&lt;i&gt;Texto en cursiva&lt;/i&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;u&gt;</td>
+        <td>Define texto subrayado</td>
+        <td>&lt;u&gt;Texto subrayado&lt;/u&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;s&gt;</td>
+        <td>Define texto tachado</td>
+        <td>&lt;s&gt;Texto tachado&lt;/s&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;sup&gt;</td>
+        <td>Define texto sobrescrito</td>
+        <td>E=mc&lt;sup&gt;2&lt;/sup&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;sub&gt;</td>
+        <td>Define texto subíndice</td>
+        <td>H&lt;sub&gt;2&lt;/sub&gt;O</td>
+    </tr>
+    <tr>
+        <td>&lt;q&gt;</td>
+        <td>Define una cita en línea</td>
+        <td>&lt;q&gt;Texto citado&lt;/q&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;cite&gt;</td>
+        <td>Define el título de una obra</td>
+        <td>&lt;cite&gt;Título de la obra&lt;/cite&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;del&gt;</td>
+        <td>Define texto eliminado</td>
+        <td>&lt;del&gt;Texto eliminado&lt;/del&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;ins&gt;</td>
+        <td>Define texto insertado</td>
+        <td>&lt;ins&gt;Texto insertado&lt;/ins&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;small&gt;</td>
+        <td>Define texto pequeño</td>
+        <td>&lt;small&gt;Texto pequeño&lt;/small&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;big&gt;</td>
+        <td>Define texto grande</td>
+        <td>&lt;big&gt;Texto grande&lt;/big&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;small&gt;</td>
+        <td>Define texto pequeño</td>
+        <td>&lt;small&gt;Texto pequeño&lt;/small&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;cite&gt;</td>
+        <td>Define una referencia a un trabajo</td>
+        <td>&lt;cite&gt;Título de la obra&lt;/cite&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;code&gt;</td>
+        <td>Define un fragmento de código de computadora</td>
+        <td>&lt;code&gt;Código de ejemplo&lt;/code&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;dfn&gt;</td>
+        <td>Define una instancia de un término definido</td>
+        <td>&lt;dfn&gt;Término definido&lt;/dfn&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;kbd&gt;</td>
+        <td>Define entrada de teclado</td>
+        <td>&lt;kbd&gt;Ctrl + C&lt;/kbd&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;samp&gt;</td>
+        <td>Define salida de muestra de un programa de computadora</td>
+        <td>&lt;samp&gt;Resultado de la muestra&lt;/samp&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;var&gt;</td>
+        <td>Define una variable en matemáticas o programación</td>
+        <td>&lt;var&gt;x&lt;/var&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;a&gt;</td>
+        <td>Define un hipervínculo</td>
+        <td>&lt;a href="https://www.ejemplo.com"&gt;Enlace de ejemplo&lt;/a&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;base&gt;</td>
+        <td>Define una URL base para todas las URL relativas en una página</td>
+        <td>&lt;base href="https://www.ejemplo.com/"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;basefont&gt;</td>
+        <td>Define la fuente base para el tamaño de fuente de un documento</td>
+        <td>&lt;basefont size="4"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;bdo&gt;</td>
+        <td>Define la dirección del texto en la que debe ser mostrado</td>
+        <td>&lt;bdo dir="rtl"&gt;Texto&lt;/bdo&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;blockquote&gt;</td>
+        <td>Define una sección de cita larga</td>
+        <td>
+            &lt;blockquote&gt;<br>
+            &emsp;Texto citado aquí...<br>
+            &lt;/blockquote&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;abbr&gt;</td>
+        <td>Define una abreviatura o acrónimo</td>
+        <td>&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;del&gt;</td>
+        <td>Define texto eliminado</td>
+        <td>&lt;del&gt;Texto eliminado&lt;/del&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;ins&gt;</td>
+        <td>Define texto insertado</td>
+        <td>&lt;ins&gt;Texto insertado&lt;/ins&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;sub&gt;</td>
+        <td>Define texto subíndice</td>
+        <td>H&lt;sub&gt;2&lt;/sub&gt;O</td>
+    </tr>
+    <tr>
+        <td>&lt;sup&gt;</td>
+        <td>Define texto sobrescrito</td>
+        <td>E=mc&lt;sup&gt;2&lt;/sup&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;q&gt;</td>
+        <td>Define una cita en línea</td>
+        <td>&lt;q&gt;Texto citado&lt;/q&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;mark&gt;</td>
+        <td>Define texto resaltado</td>
+        <td>&lt;p&gt;Texto normal con un &lt;mark&gt;texto resaltado&lt;/mark&gt;.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;bdi&gt;</td>
+        <td>Define texto direccional incrustado</td>
+        <td>&lt;p&gt;Texto normal con un &lt;bdi&gt;texto direccional incrustado&lt;/bdi&gt;.&lt;/p&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;meter&gt;</td>
+        <td>Define un valor escalar dentro de un rango conocido o un valor fraccional</td>
+        <td>&lt;meter value="5" min="0" max="10"&gt;&lt;/meter&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;progress&gt;</td>
+        <td>Define un elemento de control para mostrar el progreso de una tarea</td>
+        <td>&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;output&gt;</td>
+        <td>Define la salida de un cálculo</td>
+        <td>&lt;output for="x y"&gt;&lt;/output&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;fieldset&gt;</td>
+        <td>Define un grupo de controles en un formulario</td>
+        <td>
+            &lt;fieldset&gt;<br>
+            &emsp;&lt;legend&gt;Título del grupo&lt;/legend&gt;<br>
+            &emsp;Controles aquí...<br>
+            &lt;/fieldset&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;legend&gt;</td>
+        <td>Define un título para el elemento &lt;fieldset&gt;</td>
+        <td>&lt;legend&gt;Título del grupo&lt;/legend&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;datalist&gt;</td>
+        <td>Define una lista de opciones predefinidas para controles de entrada de datos</td>
+        <td>
+            &lt;input list="opciones"&gt;<br>
+            &lt;datalist id="opciones"&gt;<br>
+            &emsp;&lt;option value="Opción 1"&gt;<br>
+            &emsp;&lt;option value="Opción 2"&gt;<br>
+            &emsp;&lt;option value="Opción 3"&gt;<br>
+            &lt;/datalist&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;optgroup&gt;</td>
+        <td>Define un grupo de opciones en un elemento &lt;select&gt;</td>
+        <td>
+            &lt;select&gt;<br>
+            &emsp;&lt;optgroup label="Grupo 1"&gt;<br>
+            &emsp;&emsp;&lt;option value="Opción 1"&gt;Opción 1&lt;/option&gt;<br>
+            &emsp;&lt;/optgroup&gt;<br>
+            &lt;/select&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;keygen&gt;</td>
+        <td>Define un campo generador de pares de claves</td>
+        <td>&lt;keygen name="clave"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;menu&gt;</td>
+        <td>Define un menú de comandos o de opciones de navegación</td>
+        <td>
+            &lt;menu&gt;<br>
+            &emsp;&lt;li&gt;&lt;a href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;&lt;a href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;&lt;a href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/menu&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;menuitem&gt;</td>
+        <td>Define un comando que un usuario puede invocar desde un menú emergente</td>
+        <td>&lt;menuitem label="Opción" onclick="accion()"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;figure&gt;</td>
+        <td>Define contenido autónomo, como imágenes, gráficos, código, etc., con una leyenda opcional</td>
+        <td>
+            &lt;figure&gt;<br>
+            &emsp;&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;<br>
+            &emsp;&lt;figcaption&gt;Leyenda de la imagen&lt;/figcaption&gt;<br>
+            &lt;/figure&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;figcaption&gt;</td>
+        <td>Define la leyenda para un elemento &lt;figure&gt;</td>
+        <td>&lt;figcaption&gt;Leyenda&lt;/figcaption&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;canvas&gt;</td>
+        <td>Define un área gráfica para dibujar gráficos, gráficos interactivos, etc.</td>
+        <td>&lt;canvas id="miCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;details&gt;</td>
+        <td>Define un widget de detalles interactivo que puede ocultar o mostrar contenido</td>
+        <td>
+            &lt;details&gt;<br>
+            &emsp;&lt;summary&gt;Título&lt;/summary&gt;<br>
+            &emsp;Contenido oculto o visible<br>
+            &lt;/details&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;summary&gt;</td>
+        <td>Define el título visible de un elemento &lt;details&gt;</td>
+        <td>&lt;summary&gt;Título&lt;/summary&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;template&gt;</td>
+        <td>Define un fragmento de contenido HTML que no debe ser mostrado cuando se cargue la página</td>
+        <td>
+            &lt;template id="miTemplate"&gt;<br>
+            &emsp;Contenido del template<br>
+            &lt;/template&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;dialog&gt;</td>
+        <td>Define un cuadro de diálogo/flotante</td>
+        <td>
+            &lt;dialog id="miDialogo"&gt;<br>
+            &emsp;Contenido del diálogo<br>
+            &lt;/dialog&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;slot&gt;</td>
+        <td>Define un punto de inserción para contenido distribuido desde un componente padre</td>
+        <td>&lt;slot&gt;Contenido por defecto&lt;/slot&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;shadow&gt;</td>
+        <td>Define una sombra opaca para un elemento</td>
+        <td>&lt;shadow&gt;&lt;/shadow&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;iframe&gt;</td>
+        <td>Define un marco en línea para incluir otra página web</td>
+        <td>&lt;iframe src="pagina.html" width="600" height="400"&gt;&lt;/iframe&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;embed&gt;</td>
+        <td>Define un contenedor para contenido externo incrustado, como multimedia</td>
+        <td>&lt;embed src="video.mp4" width="400" height="300"&gt;&lt;/embed&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;object&gt;</td>
+        <td>Define un objeto incrustado, como multimedia o plugins de navegador</td>
+        <td>&lt;object data="archivo.swf" width="550" height="400"&gt;&lt;/object&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;param&gt;</td>
+        <td>Define parámetros para un objeto incrustado</td>
+        <td>&lt;param name="autoplay" value="true"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;source&gt;</td>
+        <td>Define múltiples recursos multimedia para elementos &lt;audio&gt; y &lt;video&gt;</td>
+        <td>
+            &lt;video controls&gt;<br>
+            &emsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+            &emsp;&lt;source src="video.ogg" type="video/ogg"&gt;<br>
+            &lt;/video&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;track&gt;</td>
+        <td>Define texto de pista para elementos &lt;video&gt; y &lt;audio&gt;</td>
+        <td>&lt;track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;map&gt;</td>
+        <td>Define un mapa de imágenes con áreas clickeables</td>
+        <td>
+            &lt;img src="plano.png" alt="Plano" usemap="#mapa"&gt;<br>
+            &lt;map name="mapa"&gt;<br>
+            &emsp;&lt;area shape="rect" coords="0,0,50,50" href="pagina1.html"&gt;<br>
+            &emsp;&lt;area shape="circle" coords="100,100,50" href="pagina2.html"&gt;<br>
+            &lt;/map&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;area&gt;</td>
+        <td>Define un área clickeable dentro de un mapa de imágenes</td>
+        <td>&lt;area shape="rect" coords="0,0,50,50" href="pagina.html"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;meter&gt;</td>
+        <td>Define un valor escalar dentro de un rango conocido o un valor fraccional</td>
+        <td>&lt;meter value="5" min="0" max="10"&gt;&lt;/meter&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;progress&gt;</td>
+        <td>Define un elemento de control para mostrar el progreso de una tarea</td>
+        <td>&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;output&gt;</td>
+        <td>Define la salida de un cálculo</td>
+        <td>&lt;output for="x y"&gt;&lt;/output&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;details&gt;</td>
+        <td>Define un widget de detalles interactivo que puede ocultar o mostrar contenido</td>
+        <td>
+            &lt;details&gt;<br>
+            &emsp;&lt;summary&gt;Título&lt;/summary&gt;<br>
+            &emsp;Contenido oculto o visible<br>
+            &lt;/details&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;summary&gt;</td>
+        <td>Define el título visible de un elemento &lt;details&gt;</td>
+        <td>&lt;summary&gt;Título&lt;/summary&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;dialog&gt;</td>
+        <td>Define un cuadro de diálogo/flotante</td>
+        <td>
+            &lt;dialog id="miDialogo"&gt;<br>
+            &emsp;Contenido del diálogo<br>
+            &lt;/dialog&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;menu&gt;</td>
+        <td>Define un menú de comandos o de opciones de navegación</td>
+        <td>
+            &lt;menu&gt;<br>
+            &emsp;&lt;li&gt;&lt;a href="#"&gt;Opción 1&lt;/a&gt;&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;&lt;a href="#"&gt;Opción 2&lt;/a&gt;&lt;/li&gt;<br>
+            &emsp;&lt;li&gt;&lt;a href="#"&gt;Opción 3&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/menu&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;menuitem&gt;</td>
+        <td>Define un comando que un usuario puede invocar desde un menú emergente</td>
+        <td>&lt;menuitem label="Opción" onclick="accion()"&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;slot&gt;</td>
+        <td>Define un punto de inserción para contenido distribuido desde un componente padre</td>
+        <td>&lt;slot&gt;Contenido por defecto&lt;/slot&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;form&gt;</td>
+        <td>Define un formulario para la entrada de datos del usuario</td>
+        <td>
+            &lt;form action="/procesar-datos" method="post"&gt;<br>
+            &emsp;Campos de entrada aquí...<br>
+            &lt;/form&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;input&gt;</td>
+        <td>Define un control de entrada en un formulario</td>
+        <td>
+            &lt;input type="text" name="nombre" id="nombre"&gt;<br>
+            &lt;input type="checkbox" name="suscripcion" id="suscripcion" value="aceptado"&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;button&gt;</td>
+        <td>Define un botón en un formulario</td>
+        <td>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;label&gt;</td>
+        <td>Define una etiqueta para un control de formulario</td>
+        <td>&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;select&gt;</td>
+        <td>Define una lista desplegable en un formulario</td>
+        <td>
+            &lt;select name="pais"&gt;<br>
+            &emsp;&lt;option value="1"&gt;EE. UU.&lt;/option&gt;<br>
+            &emsp;&lt;option value="2"&gt;Canadá&lt;/option&gt;<br>
+            &emsp;&lt;option value="3"&gt;México&lt;/option&gt;<br>
+            &lt;/select&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;optgroup&gt;</td>
+        <td>Define un grupo de opciones en un elemento &lt;select&gt;</td>
+        <td>
+            &lt;select name="fruta"&gt;<br>
+            &emsp;&lt;optgroup label="Frutas cítricas"&gt;<br>
+            &emsp;&emsp;&lt;option value="1"&gt;Naranja&lt;/option&gt;<br>
+            &emsp;&emsp;&lt;option value="2"&gt;Limón&lt;/option&gt;<br>
+            &emsp;&lt;/optgroup&gt;<br>
+            &lt;/select&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;textarea&gt;</td>
+        <td>Define un área de texto multilínea en un formulario</td>
+        <td>&lt;textarea name="comentario" rows="4" cols="50"&gt;&lt;/textarea&gt;</td>
+    </tr>
+    <tr>
+        <td>&lt;fieldset&gt;</td>
+        <td>Define un grupo de controles en un formulario</td>
+        <td>
+            &lt;fieldset&gt;<br>
+            &emsp;&lt;legend&gt;Datos personales&lt;/legend&gt;<br>
+            &emsp;Campos de entrada aquí...<br>
+            &lt;/fieldset&gt;
+        </td>
+    </tr>
+    <tr>
+        <td>&lt;legend&gt;</td>
+        <td>Define el título de un grupo de campos en un formulario</td>
+        <td>&lt;legend&gt;Datos personales&lt;/legend&gt;</td>
+    </tr>
+</table>
+</body>
+</html>
